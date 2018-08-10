@@ -4,7 +4,7 @@ node {
                 checkout scm
                 echo "1.Clone Stage" 
                 script {
-                   build_tag = sh(returnStdout: true, script: 'git rev-parse --short HEAD').trim()
+                   build_tag ="v1.0"
                    echo "build_tag:${build_tag}"
                }      
         }
